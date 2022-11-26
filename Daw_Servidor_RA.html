@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Proyecto interfaces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="p-2 text-bg-dark">
+        <section class="container">
+            <section class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="bi me-2" width="60" src="assets/images/proyecto1.jpg">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/index.html" class="nav-link px-3 text-white">Home</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark"
+                        placeholder="Buscar Ciclo Formativo..." aria-label="Search">
+                </form>
+
+                <section class="text-end">
+                    <button type="button" class="btn btn-warning">Log out</button>
+                </section>
+            </section>
+        </section>
+
+    </header>
+    <section class="jumbotron p-1 text-bg-dark">
+        <hr class="my-2">
+    </section>
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb"
+        class="p-2 text-bg-dark d-flex justify-content-around ">
+
+        <ol class="breadcrumb align-bottom">
+            <li class="breadcrumb-item"><a href="/index.html">Ciclo Formativo</a></li>
+            <li class="breadcrumb-item"><a href="/index.html">Curso</a></li>
+            <li class="breadcrumb-item"><a href="/index.html">Módulo Profesional</a></li>
+            <li class="breadcrumb-item"><a href="/indexCE_DAW_2.html">RA</a></li>
+            <li class="breadcrumb-item"><a href="/indexCE_DAW_2.html">CE</a></li>
+        </ol>
+        <section>
+        <button type="button" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#modalCrearRA">
+            Crear RA
+          </button>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalBorrarRA">Borrar RA</button>
+        </section>
+    </nav>
+    <section class="jumbotron p-2 ">
+    </section>
+
+
+    <article class="container mb-5 ">
+        <section class="row justify-content-center">
+
+
+            <section class="col-sm-5 mb-3">
+                <section class="card ">
+                    <section class="card-header d-flex justify-content-center ">
+                        <p class="text-center">RA0613.1 Selecciona las arquitecturas y tecnologías de programación Web en
+                            entorno servidor, analizando sus capacidades y características propias</p>
+                    </section>
+                    <section class="jumbotron p-2">
+                    </section>
+                    <section class=" d-flex justify-content-center">
+
+                          <button id="crearCE" type="button" class="btn btn-primary mx-auto py-2" data-bs-toggle="modal" data-bs-target="#modalCrearCe">
+                            <h5>Crear CE</h5>
+                          </button>
+
+                          <button type="button" class="btn btn-secondary mx-auto py-2" data-bs-toggle="modal" data-bs-target="#modalEditarCe">
+                            <h5>Editar CE</h5>
+                          </button>
+                      </section>
+                    <hr>
+                    <section class="">
+                        <section class="row mx-auto">
+                            <h4 class="col d-flex justify-content-center px-3">CE</h4>
+                        </section>
+
+                        <section class="row mx-auto py-2">
+
+                            <ul class="list-group col-sm px-3 ">
+                                <li class="list-group-item d-flex justify-content-start">a) Se han caracterizado y diferenciado los
+                                    modelos de ejecución de código en el servidor y
+                                    en el cliente Web.</li>
+                                <li class="list-group-item d-flex justify-content-start">b) Se han reconocido las ventajas que proporciona
+                                    la generación dinámica de páginas Web y sus
+                                    diferencias con la inclusión de sentencias de
+                                    guiones en el interior de las páginas Web.</li>
+                                <li class="list-group-item d-flex justify-content-start">c) Se han identificado los mecanismos de
+                                    ejecución de código en los servidores Web.</li>
+                                <li class="list-group-item d-flex justify-content-start">d) Se han reconocido las funcionalidades que
+                                    aportan los servidores de aplicaciones y su
+                                    integración con los servidores Web.</li>
+                                <li class="list-group-item d-flex justify-content-start">e) Se han identificado y caracterizado los
+                                    principales lenguajes y tecnologías relacionados
+                                    con la programación Web en entorno servidor.</li>
+                            </ul>
+
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-sm-5 mb-3">
+                <section class="card ">
+                    <section class="card-header d-flex justify-content-center">
+                        <p class="text-center">RA0613.2 Escribe sentencias ejecutables por un servidor Web reconociendo y
+                            aplicando procedimientos de integración del código en lenguajes de marcas </p>
+                    </section>
+                    <section class="jumbotron p-2">
+                    </section>
+                    <section class=" d-flex justify-content-center">
+                        <button id="crearCE" type="button" class="btn btn-primary mx-auto py-2" data-bs-toggle="modal" data-bs-target="#modalCrearCe">
+                            <h5>Crear CE</h5>
+                          </button>
+                          <button type="button" class="btn btn-secondary mx-auto py-2" data-bs-toggle="modal" data-bs-target="#modalEditarCe">
+                            <h5>Editar CE</h5>
+                          </button>
+                      </section>
+                    <hr>
+                    <section class="">
+                        <section class="row mx-auto">
+                            <h4 class="col d-flex justify-content-center px-3">CE</h4>
+                        </section>
+
+                        <section class="row mx-auto py-2">
+
+                            <ul class="list-group col-sm px-3 ">
+                                <li class="list-group-item d-flex justify-content-start">a) Se han reconocido los mecanismos de
+                                    generación de páginas Web a partir de lenguajes
+                                    de marcas con código embebido.</li>
+                                <li class="list-group-item d-flex justify-content-start">b) Se han identificado las principales tecnologías
+                                    asociadas.</li>
+                                <li class="list-group-item d-flex justify-content-start">c) Se han utilizado etiquetas para la inclusión de código en el lenguaje de marcas.
+                                </li>
+                                <li class="list-group-item d-flex justify-content-start">d) Se ha reconocido la sintaxis del lenguaje de
+                                    programación que se ha de utilizar.</li>
+                                <li class="list-group-item d-flex justify-content-start">e) Se han escrito sentencias simples y se han
+                                    comprobado sus efectos en el documento
+                                    resultante.</li>
+                            </ul>
+
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+
+            <section class="col-sm-5 mb-3">
+                <section class="card ">
+                    <section class="card-header d-flex justify-content-center">
+                        <p class="text-center">RA0613.3 Escribe bloques de sentencias embebidos en lenguajes de marcas,
+                            seleccionando y utilizando las estructuras de programación </p>
+                    </section>
+                    <section class="jumbotron p-2">
+                    </section>
+                    <section class=" d-flex justify-content-center">
+                        <button id="crearCE" type="button" class="btn btn-primary mx-auto py-2" data-bs-toggle="modal" data-bs-target="#modalCrearCe">
+                            <h5>Crear CE</h5>
+                          </button>
+                          <button type="button" class="btn btn-secondary mx-auto py-2" data-bs-toggle="modal" data-bs-target="#modalEditarCe">
+                            <h5>Editar CE</h5>
+                          </button>
+                      </section>
+                    <hr>
+                    <section class="">
+                        <section class="row mx-auto">
+                            <h4 class="col d-flex justify-content-center px-3">CE</h4>
+                        </section>
+
+                        <section class="row mx-auto py-2">
+
+                            <ul class="list-group col-sm px-3 ">
+                                <li class="list-group-item d-flex justify-content-start">a) Se han utilizado mecanismos de decisión en la
+                                    creación de bloques de sentencias.
+                                    b) Se han utilizado bucles y se ha verificado su
+                                    funcionamiento.</li>
+                                <li class="list-group-item d-flex justify-content-start">b) Se han utilizado bucles y se ha verificado su
+                                    funcionamiento.</li>
+                                <li class="list-group-item d-flex justify-content-start">c) Se han utilizado “arrays” para almacenar y
+                                    recuperar conjuntos de datos.
+                                    </li>
+                                <li class="list-group-item d-flex justify-content-start">d) Se han creado y utilizado funciones.</li>
+                                <li class="list-group-item d-flex justify-content-start">e) Se han utilizado formularios web para
+                                    interactuar con el usuario del navegador web.</li>
+                            </ul>
+
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+            <section class="col-sm-5 mb-3">
+                <section class="card ">
+                    <section class="card-header d-flex justify-content-center">
+                        <p class="text-center">RA0613.4 Desarrolla aplicaciones Web embebidas en lenguajes de marcas
+                            analizando e incorporando funcionalidades según especificaciones</p>
+                    </section>
+                    <section class="jumbotron p-2">
+                    </section>
+                    <section class=" d-flex justify-content-center">
+                        <button id="crearCE" type="button" class="btn btn-primary mx-auto py-2" data-bs-toggle="modal" data-bs-target="#modalCrearCe">
+                            <h5>Crear CE</h5>
+                          </button>
+                          <button type="button" class="btn btn-secondary mx-auto py-2" data-bs-toggle="modal" data-bs-target="#modalEditarCe">
+                            <h5>Editar CE</h5>
+                          </button>
+                      </section>
+                    <hr>
+                    <section class="">
+                        <section class="row mx-auto">
+                            <h4 class="col d-flex justify-content-center px-3">CE</h4>
+                        </section>
+
+                        <section class="row mx-auto py-2">
+
+                            <ul class="list-group col-sm px-3 ">
+                                <li class="list-group-item d-flex justify-content-start">a) Se han identificado los mecanismos disponibles
+                                    para el mantenimiento de la información que
+                                    concierne a un cliente web concreto y se han
+                                    señalado sus ventajas.</li>
+                                <li class="list-group-item d-flex justify-content-start">b) Se han utilizado sesiones para mantener el
+                                    estado de las aplicaciones Web.</li>
+                                <li class="list-group-item d-flex justify-content-start">c) Se han utilizado “cookies” para almacenar
+                                    información en el cliente Web y para recuperar su
+                                    contenido.</li>
+                                <li class="list-group-item d-flex justify-content-start">d) Se han identificado y caracterizado los
+                                    mecanismos disponibles para la autentificación de
+                                    usuarios.</li>
+                                <li class="list-group-item d-flex justify-content-start">e) Se han escrito aplicaciones que integren
+                                    mecanismos de autentificación de usuarios</li>
+                            </ul>
+
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+
+        </section>
+    </article>
+
+      <!-- MODAL DE CREAR RA-->
+  <div class="modal fade" id="modalCrearRA" tabindex="-1" aria-labelledby="modalCrearRALabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalCrearRALabel">Crear RA</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="nombreCiclo1" class="form-label">Nombre del Resultado de Aprendizaje</label>
+              <input type="text" class="form-control" id="nombreRa">
+            </div>
+            <button type="submit" class="btn btn-primary">Crear RA</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal de Crear CE-->
+<div class="modal fade" id="modalCrearCe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalCrearCeLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalCrearCeLabel">Crear Criterio de Evaluación</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="nombreCE" class="form-label">Nombre del CE</label>
+              <input type="text" class="form-control" id="nombreCE" >
+              <section class="jumbotron p-1">
+              </section>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Crear CE</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal de Editar CE -->
+    <div class="modal fade" id="modalEditarCe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalEditarCeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalCrearCeLabel">Editar Criterio de Evaluación</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+      
+                <form>
+                  <div class="mb-3">
+                    <label for="nomCe" class="form-label">Elige un CE</label>
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                      <option value="a">a</option>
+                      <option value="b">b</option>
+                      <option value="c">c</option>
+                      <option value="d">d</option>
+                      <option value="e">e</option>
+                    </select>
+                    <section class="jumbotron p-1">
+                    <section class="jumbotron p-1">
+                    <label for="nombreCe" class="form-label">Nuevo nombre del CE</label>
+                    <input type="text" class="form-control" id="nombreCe">
+                    <section class="jumbotron p-1">
+                    </section>
+      
+      
+                  </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                  </form>
+        
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+        <!-- Modal Borrar Resultado de Aprendizaje-->
+<div class="modal fade" id="modalBorrarRA" tabindex="-1" aria-labelledby="modalBorrarRALabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalBorrarRALabel">Borrar Ciclo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="numCurso" class="form-label">Seleccionar Ciclo</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option>RA0613.1</option>
+              <option>RA0613.2</option>
+              <option>RA0613.3</option>
+              <option>RA0613.4</option>
+
+            </select>
+          </div>
+          <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

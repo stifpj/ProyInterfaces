@@ -45,10 +45,16 @@
       <li class="breadcrumb-item"><a href="/index.html">Curso</a></li>
       <li class="breadcrumb-item"><a href="/index.html">Módulo Profesional</a></li>
     </ol>
-    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalCrearCiclo">
-      Crear Ciclo
-    </button>
+    <section>
+      <button type="button" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#modalCrearCiclo">
+        Crear Ciclo
+      </button>
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalBorrarCiclo">Borrar Ciclo</button>
+    </section>
+
+    
   </nav>
+  
   <section class="jumbotron p-2 ">
   </section>
 
@@ -60,17 +66,19 @@
 
       <section class="col-sm-5 mb-3">
         <section class="card ">
-          <section class="card-header d-flex justify-content-center">
+          <section class="card-header d-flex justify-content-center ">
             <a>DAW</a>
           </section>
 
           <section class=" d-flex justify-content-center mt-3">
             <button id="crear_modulo1" type="button" class="btn btn-primary mx-auto py-2" data-bs-toggle="modal" data-bs-target="#modalCrearModulo">
-              Crear modulo
+              <h5>Crear modulo</h5>
             </button>
             <button id="editar_modulo1" type="button" class="btn btn-secondary mx-auto  py-2" data-bs-toggle="modal" data-bs-target="#modalEditarModulo">
               <h5>Editar modulo</h5>
             </button>
+            <!-- Hay que terminar y ver como vamos a hacer la parte de borrar módulos-->
+            <button type="button" class="btn btn-danger mx-auto" data-bs-toggle="modal" data-bs-target="#modalBorrarCiclo">Borrar Ciclo</button>
 
           </section>
           <hr>
@@ -79,24 +87,24 @@
               <section class="col mx-auto">
                 <h4 class="d-flex justify-content-center mx-auto">Curso 1</h4>
                 <ul class="list-group col-sm  mx-auto ">
-                  <a class="text-decoration-none" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Sistemas informáticos.</li></a>
-                  <a class="text-decoration-none" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Bases de Datos.</li></a>
-                  <a class="text-decoration-none" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Programación.</li></a>
-                  <a class="text-decoration-none" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Lenguajes de marcas</li></a>
-                  <a class="text-decoration-none" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Entornos de desarrollo.</li></a>
-                  <a class="text-decoration-none" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Formación y orientación laboral.</li></a>
-                  <a class="text-decoration-none" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Ingles Técnico.</li></a>
+                  <a class="text-decoration-none text-center" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Sistemas informáticos.</li></a>
+                  <a class="text-decoration-none text-center" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Bases de Datos.</li></a>
+                  <a class="text-decoration-none text-center" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Programación.</li></a>
+                  <a class="text-decoration-none text-center" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Lenguajes de marcas</li></a>
+                  <a class="text-decoration-none text-center" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Entornos de desarrollo.</li></a>
+                  <a class="text-decoration-none text-center" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Formación y orientación laboral.</li></a>
+                  <a class="text-decoration-none text-center" href="/index2.html"><li class="list-group-item d-flex justify-content-center">Ingles Técnico.</li></a>
                 </ul>
               </section>
               <section class="col mx-auto">
                 <h4 class="d-flex justify-content-center mx-auto">Curso 2</h4>
                 <ul class="list-group col-sm mx-auto ">
-                  <a class="text-decoration-none" href="/indexCE_DAW_2.html"><li class="list-group-item d-flex justify-content-center">Desarrollo WEB en entorno cliente.</li></a>
-                  <a class="text-decoration-none" href="/indexCE_DAW_2.html"><li class="list-group-item d-flex justify-content-center">Desarrollo WEB en entorno servidor.</li></a>
-                  <a class="text-decoration-none" href="/indexCE_DAW_2.html"><li class="list-group-item d-flex justify-content-center">Despliegue de aplicaciones WEB.</li></a>
-                  <a class="text-decoration-none" href="/indexCE_DAW_2.html"><li class="list-group-item d-flex justify-content-center">Diseño de interfaces WEB.</li></a>
-                  <a class="text-decoration-none" href="/indexCE_DAW_2.html"><li class="list-group-item d-flex justify-content-center">Empresa e iniciativa emprendedora.</li></a>
-                  <a class="text-decoration-none" href="/indexCE_DAW_2.html"><li class="list-group-item d-flex justify-content-center">Inglés Técnico.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Cliente_RA.html"><li class="list-group-item d-flex justify-content-center">Desarrollo WEB en entorno cliente.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Desarrollo WEB en entorno servidor.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Despliegue de aplicaciones WEB.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Diseño de interfaces WEB.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Empresa e iniciativa emprendedora.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Inglés Técnico.</li></a>
                 </ul>
               </section>
             </section>
@@ -125,25 +133,25 @@
               <section class="col mx-auto">
                 <h4 class="d-flex justify-content-center mx-auto">Curso 1</h4>
                 <ul class="list-group col-sm  mx-auto">
-                  <li class="list-group-item d-flex justify-content-center">Sistemas informáticos.</li>
-                  <li class="list-group-item d-flex justify-content-center">Bases de Datos.</li>
-                  <li class="list-group-item d-flex justify-content-center">Programación.</li>
-                  <li class="list-group-item d-flex justify-content-center">Lenguajes de marcas</li>
-                  <li class="list-group-item d-flex justify-content-center">Entornos de desarrollo.</li>
-                  <li class="list-group-item d-flex justify-content-center">Formación y orientación laboral.</li>
-                  <li class="list-group-item d-flex justify-content-center">Ingles Técnico.</li>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Sistemas informáticos.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Bases de Datos.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Programación.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Lenguajes de marcas</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Entornos de desarrollo.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Formación y orientación laboral.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Ingles Técnico.</li></a>
                 </ul>
               </section>
               <section class="col mx-auto">
                 <h4 class="d-flex justify-content-center mx-auto">Curso 2</h4>
                 <ul class="list-group col-sm mx-auto">
-                  <li class="list-group-item d-flex justify-content-center">Acceso a datos.</li>
-                  <li class="list-group-item d-flex justify-content-center">Desarrollo de interfaces.</li>
-                  <li class="list-group-item d-flex justify-content-center">Programación multimedia y dispositivos móviles.</li>
-                  <li class="list-group-item d-flex justify-content-center">Programación de servicios y procesos.</li>
-                  <li class="list-group-item d-flex justify-content-center">Sistemas de gestión empresarial.</li>
-                  <li class="list-group-item d-flex justify-content-center">Empresa e iniciativa emprendedora.</li>
-                  <li class="list-group-item d-flex justify-content-center">Ingles Tecnico.</li>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Acceso a datos.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Desarrollo de interfaces.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Programación multimedia y dispositivos móviles.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Programación de servicios y procesos.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Sistemas de gestión empresarial.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Empresa e iniciativa emprendedora.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Ingles Técnico.</li></a>
                 </ul>
               </section>
             </section>
@@ -172,26 +180,26 @@
               <section class="col mx-auto">
                 <h4 class="d-flex justify-content-center mx-auto">Curso 1</h4>
                 <ul class="list-group col-sm  mx-auto">
-                  <li class="list-group-item d-flex justify-content-center">Gestión de la documentación jurídica y empresarial.</li>
-                  <li class="list-group-item d-flex justify-content-center">Recursos humanos y responsabilidad social corporativa.</li>
-                  <li class="list-group-item d-flex justify-content-center">Ofimática y proceso de la información.</li>
-                  <li class="list-group-item d-flex justify-content-center">Proceso integral de la actividad comercial.</li>
-                  <li class="list-group-item d-flex justify-content-center">Comunicación y atención al cliente.</li>
-                  <li class="list-group-item d-flex justify-content-center">Inglés.</li>
-                  <li class="list-group-item d-flex justify-content-center">Contabilidad y fiscalidad.</li>
-                  <li class="list-group-item d-flex justify-content-center">Formación y orientación laboral</li>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Gestión de la documentación jurídica y empresarial.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Recursos humanos y responsabilidad social corporativa.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Ofimática y proceso de la información.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Proceso integral de la actividad comercial.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"> <li class="list-group-item d-flex justify-content-center">Comunicación y atención al cliente.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Inglés.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Contabilidad y fiscalidad.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Formación y orientación laboral</li></a>
                 </ul>
               </section>
               <section class="col mx-auto">
                 <h4 class="d-flex justify-content-center mx-auto">Curso 2</h4>
                 <ul class="list-group col-sm mx-auto">
-                  <li class="list-group-item d-flex justify-content-center">Gestión de recursos humanos.</li>
-                  <li class="list-group-item d-flex justify-content-center">Gestión financiera.</li>
-                  <li class="list-group-item d-flex justify-content-center">Contabilidad y fiscalidad.</li>
-                  <li class="list-group-item d-flex justify-content-center">Gestión logística y comercial.</li>
-                  <li class="list-group-item d-flex justify-content-center">Simulación empresarial.</li>
-                  <li class="list-group-item d-flex justify-content-center">Proyecto de administración y finanzas</li>
-                  <li class="list-group-item d-flex justify-content-center">Inglés</li>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Gestión de recursos humanos.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Gestión financiera.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Contabilidad y fiscalidad.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Gestión logística y comercial.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Simulación empresarial.</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Proyecto de administración y finanzas</li></a>
+                  <a class="text-decoration-none text-center" href="/Daw_Servidor_RA.html"><li class="list-group-item d-flex justify-content-center">Inglés</li></a>
                 </ul>
               </section>
             </section>
@@ -224,24 +232,24 @@
               <section class="col mx-auto">
                 <h4 class="d-flex justify-content-center mx-auto">Curso 1</h4>
                 <ul class="list-group col-sm  mx-auto">
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 1</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 2</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 3</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 4</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 5</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 6</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 1</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 2</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 3</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 4</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 5</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 6</li>
                 </ul>
               </section>
               <section class="col mx-auto">
                 <h4 class="d-flex justify-content-center mx-auto">Curso 2</h4>
                 <ul class="list-group col-sm mx-auto">
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 1</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 2</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 3</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 4</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 5</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 6</li>
-                  <li class="list-group-item d-flex justify-content-center">Asignatura 7</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 1</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 2</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 3</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 4</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 5</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 6</li>
+                  <li class="list-group-item d-flex justify-content-center">Módulo 7</li>
                 </ul>
               </section>
             </section>
@@ -302,7 +310,6 @@
                 <option value="1">Curso 1</option>
                 <option value="2">Curso 2</option>
               </select>
-
             </div>
             <button type="submit" class="btn btn-primary">Crear Módulo</button>
           </form>
@@ -366,11 +373,39 @@
     </div>
   </div>
 
+
+  <!-- Modal Borrar Ciclo-->
+<div class="modal fade" id="modalBorrarCiclo" tabindex="-1" aria-labelledby="modalBorrarCicloLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalBorrarCicloLabel">Borrar Ciclo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="numCurso" class="form-label">Seleccionar Ciclo</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option value="1">DAW</option>
+              <option value="2">DAM</option>
+              <option value="2">Administración y Finanzas</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 
 </body>
-<!--prueba github-->
 </html>
