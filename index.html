@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Proyecto interfaces</title>
+  <title>Administración Ciclos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
@@ -49,6 +49,7 @@
       <button type="button" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#modalCrearCiclo">
         Crear Ciclo
       </button>
+      
       <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalBorrarCiclo">Borrar Ciclo</button>
     </section>
 
@@ -77,8 +78,6 @@
             <button id="editar_modulo1" type="button" class="btn btn-secondary mx-auto  py-2" data-bs-toggle="modal" data-bs-target="#modalEditarModulo">
               <h5>Editar modulo</h5>
             </button>
-            <!-- Hay que terminar y ver como vamos a hacer la parte de borrar módulos-->
-            <button type="button" class="btn btn-danger mx-auto" data-bs-toggle="modal" data-bs-target="#modalBorrarCiclo">Borrar Ciclo</button>
 
           </section>
           <hr>
@@ -363,6 +362,7 @@
 
             </div>
             <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger mx-auto" data-bs-toggle="modal" data-bs-target="#modalBorrarModulo">Borrar Módulo</button>
           </form>
 
         </div>
@@ -393,6 +393,28 @@
             </select>
           </div>
           <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal Asegurar Borrado Módulo-->
+<div class="modal fade" id="modalBorrarModulo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalBorrarModuloLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">¿Seguro que quieres borrarlo?</h1>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="d-flex justify-content-around">
+            <button type="submit" class="btn btn-danger px-5" data-bs-dismiss="modal">Si</button>
+            <button type="submit" class="btn btn-primary px-5" data-bs-dismiss="modal">No</button>
+          </div>
         </form>
       </div>
       <div class="modal-footer">
